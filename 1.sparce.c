@@ -14,17 +14,17 @@ int main() {
 	printf("Please enter row and coulmn number:");
 	scanf("%d%d",&m,&n);
 	int array[m][n];
-	printf("please enter the elements of matrix:");    	//matrisin elemanlarýný al
+	printf("please enter the elements of matrix:");    	//matrisin elemanlarÃ½nÃ½ al
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
 			scanf("%d",&array[i][j]);
 		}
 	}
     int count=0;
-	// Sparse matris oluþtur
+	// Sparse matris oluÃ¾tur
     for (i = 0; i < m; i++) {
         for (j = 0; j < n; j++) {
-            if (array[i][j] != 0) { // sadece sýfýr olmayanlarý kaydet
+            if (array[i][j] != 0) { // sadece sÃ½fÃ½r olmayanlarÃ½ kaydet
                 sparse[count].row = i;
                 sparse[count].column = j;
                 sparse[count].value = array[i][j];
@@ -33,7 +33,7 @@ int main() {
         }
     }
 	
-	 // Sparse matris ekrana yazdýrma
+	 // Sparse matris ekrana yazdÃ½rma
     printf("Sparse Matrix Representation:");
     printf("\nRow\tColumn\tValue\n");
     for (i = 0; i < count; i++) {
